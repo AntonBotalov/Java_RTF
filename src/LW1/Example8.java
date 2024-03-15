@@ -2,21 +2,21 @@ package LW1;
 
 import java.util.Scanner;
 
-public class Example5 {
+public class Example8 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Input name: ");
-        String name = in.nextLine();
+        System.out.println("Введите название текущего дня недели: ");
+        String dayOfWeek = in.nextLine();
 
-        System.out.println("Input age: ");
-        int age = in.nextInt();
+        System.out.println("Введите название месяца: ");
+        String month = in.nextLine();
 
-        System.out.println("Input height: ");
-        float height = in.nextFloat();
+        System.out.println("Введите дату (номер дня в месяце): ");
+        int date = in.nextInt();
 
-        System.out.printf("Name: %s Age: %d Height: %.2f \n ", name, age, height);
+        System.out.printf("Сегодня %s, %d %s\n", dayOfWeek, date, month);
+
         in.close();
-
     }
 }

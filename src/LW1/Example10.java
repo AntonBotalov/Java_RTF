@@ -1,22 +1,21 @@
 package LW1;
 
+import java.time.Year;
 import java.util.Scanner;
 
-public class Example5 {
+public class Example10 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Input name: ");
-        String name = in.nextLine();
+        System.out.println("Введите год рождения: ");
 
-        System.out.println("Input age: ");
-        int age = in.nextInt();
+        int birthYear = in.nextInt();
 
-        System.out.println("Input height: ");
-        float height = in.nextFloat();
+        int currentYear = Year.now().getValue();
+        int age = currentYear - birthYear;
 
-        System.out.printf("Name: %s Age: %d Height: %.2f \n ", name, age, height);
+        System.out.printf("Ваш возраст: %d лет\n", age);
+
         in.close();
-
     }
 }
