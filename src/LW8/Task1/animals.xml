@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<animals>
+    <animal>
+        <name>Тузик</name>
+        <genus>Собака</genus>
+        <year>2015</year>
+    </animal>
+    <animal>
+        <name>Барсик</name>
+        <genus>Кошка</genus>
+        <year>2020</year>
+    </animal>
+</animals>
